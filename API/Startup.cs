@@ -35,8 +35,8 @@ namespace API
 
             services.AddApplicationLayer();
 
-            services.AddSingleton<IFileProvider>(new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory()),
-                "wwwroot"));
+            services.AddSingleton<IFileProvider>(new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(),
+                "wwwroot")));
             services.AddMvc();
         }
 
