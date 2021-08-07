@@ -3,6 +3,7 @@ using Application.Models.Books;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Hosting;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -12,6 +13,7 @@ namespace API.Controllers
     [ApiController]
     public class BooksController : ControllerBase
     {
+        private readonly IHostingEnvironment _hostingEnvironment;
         private readonly IBookService _bookService;
 
         public BooksController(IBookService bookService)
