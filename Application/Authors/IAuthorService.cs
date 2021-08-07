@@ -16,5 +16,6 @@ namespace Application.Authors
         void UpdateAuthor(string authorId, UpdateAuthorModel model);
 
         void DeleteAuthorById(DeleteAuthorModel model);
+       
     }
 }

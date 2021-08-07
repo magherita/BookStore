@@ -56,6 +56,7 @@ namespace Application.Authors
             _authorCollection.DeleteAuthorById(model.Id);
         }
 
+
         public async Task<GetAuthorModel> GetAuthorById(string authorId, CancellationToken cancellationToken = default)
         {
             if (string.IsNullOrWhiteSpace(authorId))

@@ -23,6 +23,7 @@ namespace Domain.Books
         public DateTime PublishDate { get; set; }
 
         public string Edition { get; set; }
+        
 
         public List<Author> Authors { get; set; } = new List<Author>();
     }
